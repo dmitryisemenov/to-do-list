@@ -14,6 +14,9 @@ const TodoForm = ({ saveTodo }) => {
                 setValue(event.target.value);
             }}
             value={value}></input>
+            <button onChange={(event) => {
+                setValue(event.target.value);
+            }}>Get in the list</button>
         </form>
     )
 }
