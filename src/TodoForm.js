@@ -7,6 +7,7 @@ const TodoForm = ({ saveTodo }) => {
         <form onSubmit={(event) => {
             event.preventDefault();
             saveTodo(value);
+            setValue('');
         }}>
             <input variant='outlined' placeholder='Add Todo' margin='normal'
             onChange={(event) => {
